@@ -4,51 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
+    <style>
+
+        body{
+          background-color: hsl(99, 99%, 99%);  
+          display: grid;
+          grid-template-areas: 
+          "header"
+          "content"
+          "footer";
+          grid-template-rows: 1fr 4fr 1fr;
+          height: 100%;
+          width:100%;
+          font-family: arial,sans-serif;
+                  
+        }
+        #header{
+            grid-area: header;
+            display: grid;
+            grid-template-columns: 15fr 1fr 1fr 1fr 1fr;
+        }
+        #content{
+            grid-area: content;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        #contentCenter{
+            display: grid;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        #footer{
+            grid-area: footer;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .buttons{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .subfooter{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr 6fr 1fr 1fr 1fr;
+
+        }
+        div{
+            
+            border: thin solid black;
+        }
+        
+        </style>
 </head>
-
-<style>
-
-.googlePicture{
-  
-
-}
-.container{
-  background-color: beige;
-  height: 95%;
-  width: 100px;
-  display: grid;
-}
-</style>
-
 <html>
     <body  class="container" >
 
         
             <div id="header">
+                <div class="space"></div>
                 <div class="gmail">Gmail</div>
                 <div class="images">Images</div>
-                <div class="apps"></div>
+                <div class="apps">Apps</div>
                 <div class="login">Login</div>
             </div> 
             <div id="content">
-                <div class="logo"><img src="/home/go/the_odin_project/pictures/googlelogo.png"></img></div>
-                <div class="search"></div>
-                <div class="buttons1">Google Search</div>
-                <div class="buttons2">I'm Feeling Lucky</div>
-                <div class="taal">Google offered in:</div>
+                <div id="contentLeft"></div>
+                <div id="contentCenter">
+                    <div class="logo"><img src="/home/go/the_odin_project/pictures/googlelogo.png"></img></div>
+                    <div class="search"></div>
+                    <div class="buttons">
+                        <div class="button1">Google Search</div>
+                        <div class="button2">I'm Feeling Lucky</div>
+                    </div>                
+                    <div class="taal">Google offered in:</div>
+                </div>
+                <div class="contentRight"></div>    
             </div>
+            
             <div id="footer"> 
                 <div class="land">Belgium</div>
-                <div class="advertising">Advertising</div>
-                <div class="business">Business</div>
-                <div class="about">About</div>
-                <div class="hoxSearch">How Search works</div>
-                <div class="privacy">Privacy</div>
-                <div class="terms">Terms</div>
-                <div class="settings">Settings</div>       
-         
-                <div></div>
-
+                <div class="subfooter">
+                    <div class="advertising">Advertising</div>
+                    <div class="business">Business</div>
+                    <div class="about">About</div>
+                    <div class="hoxSearch">How Search works</div>
+                    <div class="spaceFoot"></div>
+                    <div class="privacy">Privacy</div>
+                    <div class="terms">Terms</div>
+                    <div class="settings">Settings</div>
+                </div>
+                  
             </div>
 
         <!-- <input class="gLFyf gsfi" maxlength="2048" name="q" 
