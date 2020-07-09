@@ -15,7 +15,7 @@
           "footer";
           grid-template-rows: 1fr 4fr 2fr;
           height: 740px;
-          width:1380px;
+          width:1370x;
           font-family: arial,sans-serif;
                   
         }
@@ -29,7 +29,7 @@
             grid-area: content;
             display: grid;
             grid-template-columns: 2fr 3fr 2fr;
-            grid-template-rows: 4fr 2fr 1fr 1fr;
+            
         }
         #contentCenter{
             display: grid;
@@ -39,9 +39,12 @@
         }
         #footer{
             grid-area: footer;
+            
             display: grid;
             grid-template-rows: 2fr 1fr 1fr;
+            
             font-size: 14px;
+            
         }
 
         .buttons{
@@ -51,6 +54,7 @@
         .search{
             align-content: center;
             justify-content: center;
+            
         }
         .subfooter{
             display: grid;
@@ -62,10 +66,35 @@
             display: grid;
             align-content: center;
             justify-content: center;
+            margin-bottom: 20px;
         }
         div{
+            /*     border: thin solid black;        */
             
-            /*border: thin solid black;*/
+        }
+        .buttons{
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            margin: 20px 130px 20px 130px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif ;
+            box-sizing: 40px;                   
+            
+        }
+
+        
+        .taal{
+           padding: 0px 40px 0px 120px;
+           font-size: 14px;
+            
+        }
+        .land{
+            background-color: beige;
+            
+        }
+        .subfooter{
+            background-color: beige;
         }
         
         </style>
@@ -85,19 +114,19 @@
                 <div id="contentLeft"></div>
                 <div id="contentCenter">
                     <div class="logo"><img src="/home/go/the_odin_project/pictures/googlelogo.png"></img></div>
-                    <div class="search" form=><input class="searcBox" size="90px" maxlength="2048" type="text" 
+                    <div class="search" form=><input class="searcBox" size="70px" maxlength="2048" type="text" 
                         aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off"></div>
                     <div class="buttons">
-                        <div class="button1">Google Search</div>
-                        <div class="button2">I'm Feeling Lucky</div>
+                        <div class="button1" >  <button type="button">Google Search</button> </div>
+                        <div class="button2"> <button type="button">I'm Feeling Lucky</button></div>
                     </div>                
-                    <div class="taal">Google offered in:</div>
+                    <div class="taal">Google offered in: <a href="">Turkish </a> <a href="">  English</a> <a href="">  Nederlands</a></div>
                 </div>
                 <div class="contentRight"></div>    
             </div>
             
             <div id="footer">
-                <div class="land"></div> 
+                <div class="landtop"></div> 
                 <div class="land">Belgium</div>
                 <div class="subfooter">
                     <div class="advertising">Advertising</div>
