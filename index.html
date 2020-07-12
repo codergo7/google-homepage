@@ -3,101 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Google</title>
-    <style>
-
-        body{
-          background-color: hsl(99, 99%, 99%);  
-          display: grid;
-          grid-template-areas: 
-          "header"
-          "content"
-          "footer";
-          grid-template-rows: 1fr 4fr 2fr;
-          height: 740px;
-          width:1370x;
-          font-family: arial,sans-serif;
-                  
-        }
-        #header{
-            grid-area: header;
-            display: grid;
-            grid-template-columns: 15fr 1fr 1fr 1fr 1fr;
-            font-size: 13px;
-        }
-        #content{
-            grid-area: content;
-            display: grid;
-            grid-template-columns: 2fr 3fr 2fr;
-            
-        }
-        #contentCenter{
-            display: grid;
-            
-            align-content: center;
-            justify-content: center;
-        }
-        #footer{
-            grid-area: footer;
-            
-            display: grid;
-            grid-template-rows: 2fr 1fr 1fr;
-            
-            font-size: 14px;
-            
-        }
-
-        .buttons{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .search{
-            align-content: center;
-            justify-content: center;
-            
-        }
-        .subfooter{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 2fr 6fr 1fr 1fr 1fr;
-
-        }
-
-        .logo{
-            display: grid;
-            align-content: center;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        div{
-            /*     border: thin solid black;        */
-            
-        }
-        .buttons{
-            display: grid;
-            align-content: center;
-            justify-content: center;
-            margin: 20px 130px 20px 130px;
-            font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif ;
-            box-sizing: 40px;                   
-            
-        }
-
-        
-        .taal{
-           padding: 0px 40px 0px 120px;
-           font-size: 14px;
-            
-        }
-        .land{
-            background-color: beige;
-            
-        }
-        .subfooter{
-            background-color: beige;
-        }
-        
-        </style>
+   
 </head>
 <html>
     <body  class="container" >
@@ -114,7 +22,7 @@
                 <div id="contentLeft"></div>
                 <div id="contentCenter">
                     <div class="logo"><img src="/home/go/the_odin_project/pictures/googlelogo.png"></img></div>
-                    <div class="search" form=><input class="searcBox" size="70px" maxlength="2048" type="text" 
+                    <div class="search" form=><input placeholder="Search Google and type a URL" class="searcBox" size="70px" maxlength="2048" type="text" 
                         aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off"></div>
                     <div class="buttons">
                         <div class="button1" >  <button type="button">Google Search</button> </div>
@@ -141,11 +49,6 @@
                   
             </div>
 
-        <!-- <input class="gLFyf gsfi" maxlength="2048" name="q" 
-            type="text" jsaction="paste:puy29d" aria-autocomplete="both" 
-            aria-haspopup="false" autocapitalize="off" autocomplete="off" 
-            autocorrect="off" autofocus="" role="combobox" spellcheck="false" 
-            title="Zoeken" value="" aria-label="Zoek" 
-            data-ved="0ahUKEwjAxffQj7zqAhWEzKQKHVusAkEQ39UDCAQ"> -->
+ 
 </body>
 </html>
